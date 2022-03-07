@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  .wufoo {
+      font-family: "Lucida Grande","Lucida Sans Unicode", Tahoma, sans-serif;
+  }
+</style>
+<body>
+  <form method="get" action="simpleform.html" class="wufoo">
+    <h2>Đơn Đặt Hàng/h2>
+     <p>Bạn muốn mua gì?</p>
+     <select>
+         <option value = "  ">A</option>
+         <option>B (+  0.5$)</option>
+         <option>C (+  0.5$)</option>
+     </select>
+     <p>Vui lòng chọn số lượng bạn muốn mua?</p>
+     <input type="radio" name="rd"/> 1 - $10 <br/>
+     <input type="radio" name="rd"/> 2 - $20 <br/>
+     <input type="radio" name="rd"/> 3 - $25 <br/>
+     <input type="radio" name="rd"/> 4 - $30 <br/>
+     <input type="radio" name="rd"/> 5 - $35 <br/>
+     <input type="radio" name="rd"/> 6 - $40 <br/>
+     <p> Họ Tên <span style="color: red">*</span> </p>
+     <input type = "text" name="firstname" placeholder="FirstName" size="15"/>
+     <input type = "text" name="lastname" placeholder="LastName" size="15"/>
+     <p>Email</p>
+     <input type = "text" name="email" size="35"/>
+     <p>Số điện thoại</p>
+     <input type = "number" name="phone1" size="11"/> <br>
+     <label><input name="hobby" value="travel" type="checkbox"/> Đồng ý mua hàng</label> 
+     <p><input type = "button" name="Đặt Hàng" value="Đặt Hàng"/></p>
+
+  </form>
+
+</body>
+</html>
