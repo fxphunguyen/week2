@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <h1>Caculator</h1>
+    <input type="text" id="idgiatriA" value="">
+    <input type="text" id="idgiatriB" value=""><br>
+    <div style="padding: 10px 0 0 0 ;">
+        <button type="button" onclick="tinhtong()">Addition(+)</button>
+        <button type="button" onclick="tinhhieu()">Subtraction(-)</button>
+        <button type="button" onclick="tinhnhan()">multiplication(x)</button>
+        <button type="button" onclick="tinhchia()">Divition(/)</button>
+    </div>
+
+</body>
+<Script>
+
+
+
+    function tinhtong(a, b) {
+        var a = document.getElementById("idgiatriA").value;
+        var b = document.getElementById("idgiatriB").value;
+
+        var tong = parseFloat(a) + parseFloat(b);
+        alert("Tong bang" + tong);
+        document.getElementById("idgiatriA").value =null;
+        document.getElementById("idgiatriB").value =null;
+    }
+    function tinhhieu(a, b) {
+        var a = document.getElementById("idgiatriA").value;
+        var b = document.getElementById("idgiatriB").value;
+
+        var hieu = parseFloat(a) - parseFloat((b));
+        alert("Hieu bang" + hieu);
+        document.getElementById("idgiatriA").value =null;
+        document.getElementById("idgiatriB").value =null;
+
+    }
+    function tinhnhan(a, b) {
+        var a = document.getElementById("idgiatriA").value;
+        var b = document.getElementById("idgiatriB").value;
+
+        var hieu = parseFloat(a) * parseFloat((b));
+        alert("Hieu bang" + hieu);
+        document.getElementById("idgiatriA").value =null;
+        document.getElementById("idgiatriB").value =null;
+
+    }
+    function tinhchia(a, b) {
+        var a = document.getElementById("idgiatriA").value;
+        var b = document.getElementById("idgiatriB").value;
+        ;
+        var hieu = parseFloat(a) / parseFloat((b));
+        alert("Hieu bang" + hieu);
+        document.getElementById("idgiatriA").value =null;
+        document.getElementById("idgiatriB").value =null;
+
+    }
+</Script>
+
+</html>

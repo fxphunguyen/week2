@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Amount</label><br>
+    <input type="text" id="idAmount" value="">
+    <label for="">From</label>
+    <select name="From" id="idFrom">
+        <option value="usd">USD</option>
+        <option value="vnd">VND</option>
+    </select>
+    <label for="">To</label>
+    <select id="idTo">
+        <option value="vnd">VND</option>
+        <option value="usd">USD</option>
+    </select>
+
+    <button type="button" onclick="convertAmount()">Convert</button>
+
+
+</body>
+
+<script>
+    var _amount = document.getElementById("idAmount").value;
+    document.write(_amount);
+
+    function convertAmount() {
+        var _amount = document.getElementById("idAmount").value;
+        var _from = document.getElementById("idFrom").value;
+        var _to = document.getElementById("idTo").value;
+
+        if (_from == 'usd' && _to == 'vnd') {
+            _amount = _amount * 23000;
+            document.write("Kết quả là: " + _amount);
+        }
+        if (_from == "usd" && _to == "usd") {
+            document.write("Kết quả là: " + _amount);
+        }
+        if (_from == "vnd" && _to == "usd") {
+            _amount = _amount / 23000;
+            document.write("Kết quả là: " + _amount);
+        }
+        if (_from == "vnd" && _to == "vnd") {
+            document.write("Kết quả là: " + _amount);
+        }
+
+
+    }
+
+</script>
+
+</html>
